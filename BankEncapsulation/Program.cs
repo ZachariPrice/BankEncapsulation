@@ -1,10 +1,18 @@
 ﻿namespace BankEncapsulation
 {
-    public class Program
+    internal class BankAccount
     {
-        static void Main(string[] args)
+
+        private double _balance = 0;
+        public void Deposit(double amount)
         {
-            Console.WriteLine("Hello, World!");
+           _balance += amount;
         }
+
+        public double GetBalance()
+        {
+            return _balance;
+        }
+
     }
 }
